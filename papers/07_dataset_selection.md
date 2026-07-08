@@ -1,0 +1,1 @@
+# Dataset SelectionDataset 1: ElectricityReason:- Widely used benchmark- Strong seasonality- Used in many forecasting papers- Suitable for classical models, transformers, and foundation models
