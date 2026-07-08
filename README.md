@@ -11,22 +11,23 @@ Towards Trustworthy Foundation Models for Time-Series Forecasting: A Framework f
 
 ```text
 TimeSeriesFoundationModels/
-├── data/
-│   └── bitcoin/
-│       └── btcusd_1-min_data.csv
-├── figures/
-├── notebooks/
-│   └── 01_EDA.ipynb
-├── papers/
-├── proposal/
-├── results/
-├── src/
-│   ├── data_loader.py
-│   ├── metrics.py
-│   ├── plots.py
-│   └── preprocessing.py
-├── README.md
-└── requirements.txt
+|-- data/
+|   `-- bitcoin/
+|       `-- btcusd_1-min_data.csv
+|-- figures/
+|-- notebooks/
+|   |-- 01_EDA.ipynb
+|   `-- 02_Classical_Models.ipynb
+|-- papers/
+|-- proposal/
+|-- results/
+|-- src/
+|   |-- data_loader.py
+|   |-- metrics.py
+|   |-- plots.py
+|   `-- preprocessing.py
+|-- README.md
+`-- requirements.txt
 ```
 
 ## Bitcoin EDA pipeline modules
@@ -47,5 +48,3 @@ df = load_bitcoin_data("data/bitcoin/btcusd_1-min_data.csv")
 df_daily = prepare_daily_bitcoin_data(df)
 ax = plot_time_series(df_daily, column="Close")
 ```
-
-
